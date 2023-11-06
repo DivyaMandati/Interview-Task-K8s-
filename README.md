@@ -20,6 +20,7 @@ Notes:
 
 • You can run/debug your code inside the integrated console for the Coding Challenges.
 
+DESCRIPTION: 
 
 To begin, kindly provide your login credentials, including your email address. Once this information is submitted, you will be prepared to initiate the test. In certain instances, practice tests may be available to help you familiarize yourself with the format of the actual test. When you are ready to commence the official examination, the timer will be activated, and you must complete the test within the allocated time frame before submitting your responses.
 
@@ -37,6 +38,10 @@ Your task is to:
   of app=MyApp 
 
 * Finally create a service named application-service with type LoadBalancer, that is forwarding port 80 to the pod tagged with label app-MyApp on port 8081
+
+COMMAND: 
+
+kubectl apply -f deployment.yaml
 
 
 
