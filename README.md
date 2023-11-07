@@ -55,7 +55,46 @@ You need to deploy an application on Kubernetes. Create and complete the deploym
 ### **3. Create deployment.yaml .**
 
 ```
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hackajob-challenge
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: application
+  namespace: hackajob-challenge
+spec:
+  selector:
+    matchLabels:
+      app: MyApp
+  template:
+    metadata:
+      labels:
+        app: MyApp
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:stable
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: application-service
+  namespace: hackajob-challenge
+spec:
+  selector:
+    app: MyApp
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
+```
+***
 
+You can save this configuration in a file named deployment.yaml and then apply it to your Kubernetes cluster using the kubectl apply -f deployment.yaml command. This will create the specified namespace, deployment, and service as described in the challenge.
 
 ## COMMAND: 
 
