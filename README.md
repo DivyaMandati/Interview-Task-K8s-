@@ -1,7 +1,20 @@
 # Interview-Task-K8s-
+
+# Table of contents
+
+1.[Introduction](#**<Introduction>**)
+
+2.[Test Instructions](#**<Test-Instructions>**)
+
+3.[Task1](#**<Task1>**)
+
+4.[deployment.yaml](#**<deployment.yaml>**)
+
+## **Introduction**
+
 In a typical job interview process, the technical test is a crucial stage that evaluates a candidate's practical skills and knowledge relevant to the job position. This stage usually consists of a series of tests or exercises designed to assess the candidate's ability to solve technical problems and perform tasks that are directly related to the role they are applying for. Here is a test home screen instructions how it looks like.
 
-TEST INSTRUCTIONS: 
+## Test Instructions : 
 
 Thanks for your interest in joining the Home Office team and for taking the time to complete this online technical evaluation that is designed to enable the Home Office recruitment team to better understand where your strengths are.
 This online evaluation includes one of the following modules:
@@ -12,7 +25,7 @@ This online evaluation includes one of the following modules:
 
 Good luck, have fun, and thanks again for your interest in joining the Home Office team!
 
-Notes:
+### Notes:
 
 • You can access the instructions panel on the top left side of your screen where you will be able to see all these instructions again.
 
@@ -20,17 +33,17 @@ Notes:
 
 • You can run/debug your code inside the integrated console for the Coding Challenges.
 
-DESCRIPTION: 
+### DESCRIPTION: 
 
 To begin, kindly provide your login credentials, including your email address. Once this information is submitted, you will be prepared to initiate the test. In certain instances, practice tests may be available to help you familiarize yourself with the format of the actual test. When you are ready to commence the official examination, the timer will be activated, and you must complete the test within the allocated time frame before submitting your responses.
 
-TASK 1:
+## TASK 1:
 
-Kubernetes Task:
+## Kubernetes Task:
 
 You need to deploy an application on Kubernetes. Create and complete the deployment.yaml file in order to solve this challenge. Do not create reasources from the CLI, all of them are deleted when the tests are run.
 
-Your task is to:
+## Your task is to:
 
 * ﻿﻿Create a new namespace hackajob-challenge
 
@@ -39,9 +52,14 @@ Your task is to:
 
 * Finally create a service named application-service with type LoadBalancer, that is forwarding port 80 to the pod tagged with label app-MyApp on port 8081
 
-COMMAND: 
+### **3. Create deployment.yaml .**
 
-kubectl apply -f deployment.yaml
+```
+
+
+## COMMAND: 
+
+ **```kubectl apply -f deployment.yaml```**
 
 
 
